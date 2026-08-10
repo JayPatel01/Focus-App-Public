@@ -1,1 +1,174 @@
-<h1>Focus App Privacy Policy</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus App | Privacy & Terms</title>
+    <style>
+        :root {
+            --bg-color: #040404;
+            --text-main: #FFFFFF;
+            --text-muted: rgba(255, 255, 255, 0.6);
+            --accent: #FF9F0A;
+            --border-glass: rgba(255, 255, 255, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        /* Tactical Dot Matrix Background */
+        body {
+            background-color: var(--bg-color);
+            background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+            background-size: 24px 24px;
+            color: var(--text-main);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+            position: relative;
+        }
+
+        /* Ambient Vignette Overlay */
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.8) 100%);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        /* Main Glass Container */
+        .container {
+            max-width: 680px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--border-glass);
+            border-radius: 24px;
+            padding: 48px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 14px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            color: var(--accent);
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: 900;
+            letter-spacing: 0.5px;
+            margin-bottom: 40px;
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid var(--border-glass);
+            padding-bottom: 8px;
+        }
+
+        p {
+            font-size: 15px;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 24px;
+            color: var(--text-muted);
+            font-size: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: var(--text-main);
+            text-decoration: none;
+            border-bottom: 1px solid var(--accent);
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--accent);
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 48px;
+            text-align: center;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.3);
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            .container {
+                padding: 32px 24px;
+                border-radius: 16px;
+            }
+            h2 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Focus Pro Engine</h1>
+        <h2>Privacy & Terms</h2>
+
+        <h3>1. 100% On-Device Privacy</h3>
+        <p>Focus was engineered with a strict, zero-tracking architecture. We believe that your schedule, routines, and deep-work analytics are your property. Focus does not collect, harvest, transmit, or store any of your personal data on external servers.</p>
+        
+        <h3>2. Data Storage & iCloud Sync</h3>
+        <p>All application data is managed locally on your physical device using Apple's native SwiftData framework. If you unlock Focus Pro and enable Multi-Device Sync, your data is routed exclusively through your personal Apple iCloud account via CloudKit.</p>
+        <ul>
+            <li>Your data is stored in a private, encrypted iCloud database zone.</li>
+            <li>The developer has absolutely zero access to this database.</li>
+            <li>No third-party analytics SDKs are installed in this application.</li>
+        </ul>
+
+        <h3>3. Apple Calendar Integration</h3>
+        <p>If you choose to enable Calendar Routing, Focus will request permission to read and write to your local Apple Calendar via EventKit. This operation happens entirely on your device. Your calendar events are never transmitted to us or any third parties.</p>
+
+        <h3>4. Terms of Service</h3>
+        <p>By downloading and using the Focus app, you agree to Apple's Standard End User License Agreement (EULA). You can review the complete terms here: <br>
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Apple Standard EULA</a>.</p>
+
+        <h3>5. Contact & Support</h3>
+        <p>If you have any questions regarding your data privacy, bug reports, or subscription management, please reach out directly.</p>
+        <p>Email: <a href="mailto:hello@ofcoursejaypatel.com">hello@ofcoursejaypatel.com</a></p>
+
+        <div class="footer">
+            &copy; 2026 Jay Patel. All Rights Reserved.
+        </div>
+    </div>
+
+</body>
+</html>
